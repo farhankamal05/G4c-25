@@ -1,136 +1,126 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Demo Sample</title>
+    <title>Rize Of Dystopia</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #111;
+        color: #f1f1f1;
+      }
+      h1, h2, h3 {
+        color: #00ff99;
+      }
+      .w3-border-amber {
+        border-color: #00ff99 !important;
+      }
+      .icon-link:hover {
+        color: #00ff99 !important;
+      }
+    </style>
   </head>
   <body>   
     <section>
       <!-- MOBILE NAVIGATION -->
       <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
-        <a href="#home" class="w3-bar-item w3-button w3-hover-none">My Game</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Rize Of Dystopia</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="toggleNavigation()">&#9776;</a>
       </div>
       <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#pitch" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PITCH</a>
-        <a href="#theme" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">THEME</a>
-        <a href="#why" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">WHY</a>
+        <a href="#pitch" class="w3-bar-item w3-button w3-center" onclick="toggleNavigation()">PITCH</a>
+        <a href="#theme" class="w3-bar-item w3-button w3-center" onclick="toggleNavigation()">THEME</a>
+        <a href="#why" class="w3-bar-item w3-button w3-center" onclick="toggleNavigation()">MY WHY</a>
       </div>
 
       <!-- SOCIAL SECTION -->
       <section class="image-section w3-quarter w3-fixed w3-padding-small">
-        <!--IMAGE/AVATAR-->
-        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <!--S0CIAL NETWORK BUTTONS-->
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;" />
         <div class="links w3-margin-top w3-padding-small">
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#linkedin" target="_blank">
-             <i data-feather="linkedin"></i>
+          <a class="icon-link w3-text-sand" href="https://linkedin.com/in/your-link" target="_blank">
+            <i data-feather="linkedin"></i>
           </a>
         </div>
-        
-       
       </section>
 
-      <!-- CONTENT SECTION-->
+      <!-- CONTENT SECTION -->
       <section class="w3-threequarter w3-padding-large w3-right">
-        <!--DESKTOP NAVIGATION-->
         <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">GAME</a>
-          <a href="#why" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">WHY</a>
-          <a href="#theme" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">THEME</a>
-          <a href="#pitch" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PITCH</a>
+          <a href="#home" class="w3-bar-item w3-button">GAME</a>
+          <a href="#why" class="w3-bar-item w3-button w3-right">MY WHY</a>
+          <a href="#theme" class="w3-bar-item w3-button w3-right">THEME</a>
+          <a href="#pitch" class="w3-bar-item w3-button w3-right">PITCH</a>
         </div>
-        <div class="content-container w3-margin-top-2">
-          <!--HOME SECTION-->
-          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
-            <center>
-            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
-            <h1>MY AWESOME GAME</h1>
-            <h2>Pepito Perez (HS Freshman )</h2>
-            <h3>Game Developer in the Making</h3>
-            <p></p></center>
-          </div>
-<div> <!-- you May use a video
-  <video width="1000" height="740" controls>
-  <source src="movie.mp4" type="video/mp4">
-</video>
-  
-  -->
-  <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/xXnuaCXU2NIncxOwOfdVzHh261yXmJE6xguSA0BZ2Bc/embed"></iframe>
 
-  <!--<iframe src="https://play.unity.com/en/games/1ac0fb59-0583-4d44-89f3-0dec0e5a0b2e/rab-to-g4c" height="700" width="900" title="Iframe Example"></iframe>
---></div>
-          <!--pitch SECTION-->
-          <div id="pitch" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PITCH</h2>
-            <p class="w3-margin-top-2"> 
-              After a conflict that eradicated almost entirely of life on Earth, 
-              you are made leader to rebuild society. In Rize Of Dystopia, 
-              you will be managing four factions who are: The Verzdent: produces food for the people, 
-              Aquwafz: provides drinkable water, MediTex: Creates medicine, And lastly EnerGen: produces energy for all factions 
-              to run. No matter what you need all four of them to survive and so your main objective is to ensure they all can get
-              the necessary resources to continue running. Also, ensure that peace is accomplished, if you are neglectful you will 
-              fall to rebellion.
-            </p>
-            <p class=""> 
-              In the Aftermath of the apocalypse, You are in charge of the fates of others to rebuild a Dystopian society.
-            </p>
-            
+        <!-- HOME SECTION -->
+        <div id="home" class="home w3-container w3-margin-top-4">
+          <center>
+            <p style="font-style: italic; font-size:x-large;">“In the Aftermath of the apocalypse, You are in charge of the fates of others to rebuild a Dystopian society.”</p>
+            <h1>RIZE OF DYSTOPIA</h1>
+            <h2>By Pepito Perez</h2>
+            <h3>High School Freshman | Game Developer</h3>
+          </center>
+          <div class="w3-margin-top">
+            <video width="1000" height="740" controls>
+              <source src="movie.mp4" type="video/mp4">
+            </video>
           </div>
-           <!--Theme SECTION-->
-          <div id="theme" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">THEME</h2>
-            <p class="w3-margin-top-2"> 
-              In Rize Of Dystopia, The Dystopian post-apocalyptic theme is shown in the game via the buildings, 
-              environment, And also its UI. Players would have to learn to manage resources and also how to ensure 
-              strong connections among the factions, as if one is not happy, all will befall rebellion. 
-              This overall also reflects the real world as we all work together to run the world. Also reflects our upcoming 
-              resource crises like freshwater shortages, lack of food, Non accessible medicine, or lack of sustainable energy. 
-              How they play the game will reflect the core basis of how societies run.
-            </p>
-          </div>
+        </div>
 
-           <!--Why SECTION-->
-          <div id="why" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY WHY</h2>
-            <p class="w3-margin-top-2"> 
-              
-            </p>
-            <p class=""> 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-               Nam porttitor sollicitudin efficitur. 
-               Integer posuere odio vel ullamcorper euismod. 
-               Aliquam sit amet nulla tortor. 
-               Integer vehicula nunc et condimentum feugiat. 
-               Aenean tempor, dolor in pharetra euismod, lacus eros suscipit massa, in aliquet risus orci non leo.
-            </p>
-            
-          </div>
-          </div>
-       
+        <!-- PITCH SECTION -->
+        <div id="pitch" class="w3-container w3-margin-top-20-percent w3-large">
+          <h2 class="w3-border-bottom w3-border-amber">PITCH</h2>
+          <p>
+            After a conflict that eradicated almost all life on Earth, you are made leader to rebuild society. In *Rize Of Dystopia*, you will be managing four factions:
+          </p>
+          <ul>
+            <li><strong>The Verzdent</strong> – produces food for the people</li>
+            <li><strong>Aquwafz</strong> – provides drinkable water</li>
+            <li><strong>MediTex</strong> – creates medicine</li>
+            <li><strong>EnerGen</strong> – produces energy for all factions to run</li>
+          </ul>
+          <p>
+            Your objective is to ensure each faction receives the resources it needs to survive. Peace must be maintained—neglect even one, and rebellion may arise. Balance, strategy, and foresight are your keys to success.
+          </p>
+        </div>
+
+        <!-- THEME SECTION -->
+        <div id="theme" class="w3-container w3-margin-top-20-percent w3-large">
+          <h2 class="w3-border-bottom w3-border-amber">THEME</h2>
+          <p>
+            *Rize Of Dystopia* embodies the G4C theme of <strong>Peace Formers</strong> through its focus on post-apocalyptic reconstruction and social balance. The game’s dystopian world is visualized through detailed UI, ruined environments, and somber tones.
+          </p>
+          <p>
+            Players learn how fragile civilization can be, and how interdependence between factions mirrors the real world’s reliance on sustainable food, water, medicine, and energy. The game also reflects real issues such as freshwater shortages, global food insecurity, and energy dependence.
+          </p>
+        </div>
+
+        <!-- MY WHY SECTION -->
+        <div id="why" class="w3-container w3-margin-top-20-percent w3-large">
+          <h2 class="w3-border-bottom w3-border-amber">MY WHY</h2>
+          <p>
+            I created *Rize Of Dystopia* to raise awareness about how interconnected our world truly is. Every society relies on critical resources—and when even one falters, the consequences ripple throughout.
+          </p>
+          <p>
+            Through this game, I want players to experience the pressure of leadership, and reflect on the challenges of global resource management. Hopefully, it inspires players to think about how they can be part of the solution in the real world.
+          </p>
+        </div>
+      </section>
+    </section>
+
     <script>
-      // Function to toggle mobile navigation
       function toggleNavigation() {
         let nav = document.getElementById("mobile-nav");
-        if (nav.classList.contains('w3-show')) {
-          nav.classList.remove('w3-show');
-        } else { 
-          nav.classList.add('w3-show');
-        }
+        nav.classList.toggle('w3-show');
       }
-    </script>
-    <script>
-      // Script to load feather icons
-      feather.replace()
+      feather.replace();
     </script>
   </body>
 </html>
